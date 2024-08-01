@@ -1,0 +1,92 @@
+.remove-from-favorites {
+  height: 30px;
+  width: 120px;
+}
+.header-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Cambia el color de fondo */
+  padding: 20px; /* Agrega relleno */
+}
+
+.header-middle h1 {
+  font-family: "Inter", sans-serif; /* Usa la fuente Inter */
+  position: relative;
+  left: 2.5em;
+  font-weight: 700; /* Negrita */
+  color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  font-size: 5rem; /* Tamaño de fuente */
+  animation: bounce 1s infinite; /* Animación */
+  margin: 0;
+}
+
+/* Animación bounce */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.favorites-container {
+  padding: 20px;
+}
+
+.favorites-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.favorite-item-img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.favorite-item-name,
+.favorite-item-price,
+.favorite-item-remove {
+  margin-right: 20px;
+}
+
+.favorite-item-remove {
+  padding: 5px 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .favorite-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .favorite-item-img {
+    width: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .favorite-item-name,
+  .favorite-item-price,
+  .favorite-item-remove {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,310 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-logo-img {
+  transition: width 0.3s, top 0.3s;
+  scale: 1.5;
+  position: relative;
+  left: 70px;
+}
+
+.header-social {
+  transition: transform 0.3s;
+}
+
+main {
+  padding: 70px 20px 20px; /* Ajusta el padding superior para compensar el navbar fijo */
+}
+
+.sort-options {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sort-options label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-social {
+  transform: scale(1.5);
+  position: relative;
+  padding-right: 40px;
+}
+.header-social-img {
+  padding: 0;
+}
+.fa-sign-in {
+  color: white;
+  scale: 1.3;
+  position: relative;
+  left: 1em;
+  text-shadow: 0 0 10px #e04141, /* Sombra principal */ 0 0 20px #fff,
+    /* Segunda sombra */ 0 0 30px #ff0000;
+}
+.header-form {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#prueba {
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s, height 0.3s;
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+#footer {
+  width: 100%;
+}
+
+.footer-copyright {
+  width: 100%;
+}
+/* CARD */
+main {
+  padding: 50px;
+  height: auto;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.product-container a {
+  text-decoration: none;
+  color: initial;
+}
+
+.product-card {
+  background-color: #f0f0f0;
+  border-radius: 14px;
+  width: auto;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+}
+.product-info {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-title {
+  font-size: large;
+  font-weight: bold;
+  word-wrap: break-word;
+  display: block;
+  line-height: 22px;
+}
+
+.product-description {
+  font-size: small;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+
+.product-tax-policy {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.product-price-block {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price-block .price {
+  font-size: 22px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.product-price-block .discount {
+  font-size: 12px;
+  font-weight: 700;
+  color: #428f13;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 50px; /* Puedes ajustar este valor para cambiar la distancia desde abajo */
+  right: 70px; /* Puedes ajustar este valor para cambiar la distancia desde la derecha */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-icon {
+  width: 60px; /* Puedes ajustar este valor para cambiar el tamaño del icono */
+  height: 60px;
+  background-color: white; /* Fondo blanco */
+  border-radius: 50%; /* Forma circular */
+  display: flex; /* Asegura que el contenido del icono esté centrado */
+  justify-content: center; /* Centra horizontalmente el contenido del icono */
+  align-items: center; /* Centra verticalmente el contenido del icono */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+
+@media (max-width: 1300px) {
+  .header-social {
+    position: absolute;
+    transform: scale(1);
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    gap: -2px;
+  }
+  .fa-sign-in {
+    color: white;
+    scale: 1.3;
+    position: relative;
+    left: 1em;
+    text-shadow: 0 0 10px #e04141, /* Sombra principal */ 0 0 20px #fff,
+      /* Segunda sombra */ 0 0 30px #ff0000;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+  .product-card {
+    width: 80%; /* Ajusta el ancho de la tarjeta del producto al 80% */
+    margin: 0 auto; /* Centra las tarjetas */
+  }
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-logo-img {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 80px;
+    left: -320px;
+  }
+
+  .header-form {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .header-input {
+    width: 100%;
+  }
+
+  .header-social {
+    align-self: flex-end; /* Alinea .header-social a la derecha */
+    display: flex;
+    justify-content: flex-end; /* Asegura que los íconos estén alineados a la derecha */
+    padding: 0px 0;
+    transform: scale(0.8);
+    margin-right: -50px;
+    position: relative;
+    top: -110px;
+    left: 0;
+  }
+  .header-social-img {
+    padding: 0;
+  }
+
+  .fa-sign-in {
+    scale: 1.3; /* Ajusta el escalado para pantallas más pequeñas */
+    position: relative; /* Ajusta la posición para pantallas más pequeñas */
+    left: 0; /* Ajusta la posición para pantallas más pequeñas */
+  }
+
+  .header-li {
+    margin: 0 10px;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+
+  .product-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  .header-logo-img {
+    width: 100px;
+    position: relative;
+    scale: 1.5;
+    left: -200px;
+    top: 100px;
+  }
+
+  .product-card {
+    width: 80%; /* Ajusta el ancho de la tarjeta del producto al 80% */
+    margin: 0 auto; /* Centra las tarjetas */
+  }
+
+  .product-img {
+    height: 150px;
+  }
+
+  .whatsapp-button {
+    bottom: 20px; /* Reduce la distancia desde abajo para pantallas pequeñas */
+    right: 20px; /* Reduce la distancia desde la derecha para pantallas pequeñas */
+  }
+
+  .whatsapp-icon {
+    width: 50px; /* Reduce el tamaño del icono para pantallas pequeñas */
+    height: 50px;
+  }
+
+  .header-social {
+    transform: scale(0.8); /* Ajusta el escalado para pantallas más pequeñas */
+    display: flex;
+    justify-content: left;
+    padding: 10px 0;
+    position: relative; /* Ajusta la posición para pantallas más pequeñas */
+    top: -50px;
+    left: 300px; /* Ajusta la posición para pantallas más pequeñas */
+  }
+  .fa-sign-in {
+    scale: 1; /* Ajusta el escalado para pantallas más pequeñas */
+    position: static; /* Ajusta la posición para pantallas más pequeñas */
+    left: 0; /* Ajusta la posición para pantallas más pequeñas */
+  }
+}

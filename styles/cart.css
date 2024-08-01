@@ -1,0 +1,168 @@
+.header-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Cambia el color de fondo */
+  padding: 20px; /* Agrega relleno */
+}
+
+.header-social {
+  margin-right: 190px;
+}
+
+.header-middle h1 {
+  font-family: "Inter", sans-serif; /* Usa la fuente Inter */
+  position: relative;
+  left: 2em;
+  font-weight: 700; /* Negrita */
+  color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  font-size: 5rem; /* Tamaño de fuente */
+  animation: bounce 1s infinite; /* Animación */
+  margin: 0;
+}
+
+/* Animación bounce */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.checkout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 3rem 0;
+  gap: 2rem;
+}
+
+.checkout-products,
+.checkout-resume {
+  background: var(--gray);
+  padding: 3rem 2rem;
+  border-radius: 6px;
+}
+.checkout-products {
+  flex: 1;
+}
+.checkout-resume {
+  flex: 0.5;
+  text-align: center;
+}
+.checkout-resume * {
+  margin: 0 0 1rem 0;
+}
+.checkout-resume h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout-products article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+.checkout-products article:last-child {
+  margin: 0;
+}
+.checkout-products article > div {
+  display: flex;
+  gap: 1rem;
+}
+.checkout-products article > div > div p {
+  margin: 0 0 1rem 0;
+}
+.checkout-products article img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--gray-2);
+  border-radius: 6px;
+  display: block;
+}
+
+#pruebaForm {
+  padding-top: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.btn-primary {
+  font-size: 20px; /* Tamaño de fuente */
+  padding: 10px 20px; /* Aumentar el padding para hacer el botón más grande */
+  background-color: #fde9e9;
+  /* Estilos para el hover */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.btn-danger {
+  font-size: 20px; /* Tamaño de fuente */
+  padding: 10px 20px; /* Aumentar el padding para hacer el botón más grande */
+  background-color: #fde9e9;
+  /* Estilos para el hover */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+.btn-danger:hover {
+  background-color: #ddb96d; /* Cambio de color de fondo en hover */
+  color: #fff; /* Cambio de color de texto en hover */
+}
+
+.btn-primary:hover {
+  background-color: #ddb96d; /* Cambio de color de fondo en hover */
+  color: #fff; /* Cambio de color de texto en hover */
+}
+h6 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 10px; /* Espacio alrededor del texto */
+  background-color: #f0f0f0; /* Color de fondo */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Animación de tipeo */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Estilos para pantallas menores a 768px */
+@media (max-width: 1024px) {
+  .header-middle h1 {
+    overflow: hidden; /* Oculta el texto que excede el contenedor */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    border-right: 2px solid white; /* Añade una barra de cursor tipo tipeo */
+    animation: typing 3s steps(40, end), blink 0.75s step-end infinite; /* Animación de tipeo y parpadeo */
+    font-size: 2rem; /* Tamaño de fuente ajustado para pantallas pequeñas */
+    left: 5em; /* Ajusta la posición para pantallas pequeñas */
+  }
+}

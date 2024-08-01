@@ -1,0 +1,90 @@
+.header-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Cambia el color de fondo */
+  padding: 20px; /* Agrega relleno */
+}
+
+.header-middle h1 {
+  font-family: "Inter", sans-serif; /* Usa la fuente Inter */
+  position: relative;
+  left: 2em;
+  font-weight: 700; /* Negrita */
+  color: white; /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  font-size: 3rem; /* Tamaño de fuente */
+  animation: bounce 1s infinite; /* Animación */
+  margin: 0;
+}
+
+/* Animación bounce */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+#form-login button[type="submit"] {
+  padding: 12px 24px; /* Ajusta el padding para hacer el botón más grande */
+  font-size: 18px; /* Tamaño de fuente más grande */
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color de texto */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+#form-login button[type="submit"]:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+.login-container {
+  padding: 20px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-label {
+  margin-bottom: 5px;
+}
+
+.login-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .login-input {
+    width: 100%;
+  }
+}
